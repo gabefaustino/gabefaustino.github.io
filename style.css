@@ -60,6 +60,12 @@ header nav ul li {
     color: #539DFF;
 }
 
+/* Hover no nome "Gabe" */
+.logo a span:hover {
+    color: #F0F0F0; /* A cor que você desejar para o hover */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
     header .interface {
