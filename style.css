@@ -130,6 +130,12 @@ section.topo-do-site .flex{
     color: #539DFF;
 }
 
+.rodape p{
+    text-align: center;
+    font-style: italic;
+    color: white
+}
+
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
     header .interface {
