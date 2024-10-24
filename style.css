@@ -7,9 +7,24 @@
     font-optical-sizing: auto;
 }
 
+.flex{
+    display: flex;
+}
+
+.btn-cv button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #539DFF;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: .2s;
+}
+
 body {
     background-color: #1A1A40;
-    /* Removido height: 100vh para evitar problemas com conteúdo longo */
 }
 
 .interface {
@@ -29,7 +44,7 @@ header > .interface {
 }
 
 header nav ul {
-    list-style-type: none; /* Aplicado no lugar correto */
+    list-style-type: none;
 }
 
 header nav ul li a {
@@ -45,7 +60,7 @@ header nav ul li a:hover {
 }
 
 header nav ul li a:focus {
-    outline: 2px solid #539DFF; /* Foco para acessibilidade */
+    outline: 2px solid #539DFF; 
 }
 
 header nav ul li {
@@ -63,7 +78,52 @@ header nav ul li {
 /* Hover no nome "Gabe" */
 .logo a span:hover {
     color: #F0F0F0; /* A cor que você desejar para o hover */
-    transition: color 0.3s ease; /* Transição suave */
+    transition: color 0.5s ease-in-out; /* Transição mais suave */
+    text-decoration: none; /* Retirado o sublinhado */
+}
+
+.btn-cv button:hover{
+    box-shadow: 0px 0px 8px #539DFF;
+    transform: scale(1.05);
+}
+
+/* Estilo topo do site*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #539DFF;
+    font-size: 42px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #ffffff;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.img-topo-site img {
+    width: 400px; /* Tamanho ajustado da imagem */
+    height: auto;
+}
+
+/* Estilo dos ícones de redes sociais */
+.social-links a {
+    font-size: 32px; /* Aumentando o tamanho dos ícones */
+    color: #F0F0F0;
+    transition: color 0.3s ease;
+    margin-right: 15px;
+}
+
+.social-links a:hover {
+    color: #539DFF;
 }
 
 /* RESPONSIVIDADE */
@@ -76,5 +136,9 @@ header nav ul li {
     header nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    .img-topo-site img {
+        width: 220px; /* Ajuste de tamanho para dispositivos menores */
     }
 }

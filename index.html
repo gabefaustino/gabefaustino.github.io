@@ -8,13 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Fim Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="style.css">
     <title>Gabe Portifólio</title>
 </head>
 <body>
     <header>
         <div class="interface">
-            <div class="logo">
+            <div class="logo" data-aos="zoom-in" data-aos-duration=1500>
                 <a href="#">
                     <span>Gabe</span>
                 </a>
@@ -32,5 +34,42 @@
             </nav>
         </div><!--Interface-->
     </header>
+
+    <main>
+        <section class="topo-do-site"> 
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-topo-site">
+                        <img src="/images/Gabe-foto.png" alt="">
+                    </div><!--Fim img topo site-->
+                    <div class="txt-topo-site">
+                        <h1>Olá, você! Sou o Gabe.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut auctor libero, vitae venenatis ligula. Vivamus viverra sapien nec lacus lacinia, at ultrices orci efficitur. Etiam pellentesque egestas dui, eget elementum nibh laoreet vel. Ut et vehicula lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi scelerisque, arcu vel ultrices sollicitudin, ipsum nulla commodo nibh, et faucibus ex sem finibus leo. Donec mattis augue at lorem volutpat rhoncus. Nam in tortor non nibh rutrum congue eu non ligula. Nunc venenatis est felis, a consectetur libero porta sed. Curabitur iaculis, mi nec tristique tristique, lorem dolor tincidunt magna, posuere dignissim est odio sed ante.</p>
+
+                        <div class="social-links">
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div><!--fim social-links-->
+
+                        <div class="btn-cv">
+                            <a href="#">
+                                <button>Download CV</button>
+                            </a>
+                        </div>
+
+                    </div><!--Fim txt topo site-->
+
+
+                </div> <!--Fim flex-->
+            </div> <!--Fim interface-->
+        </section> <!--Fim topo do site-->
+    </main>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+    
 </body>
 </html>
