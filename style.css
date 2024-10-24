@@ -77,9 +77,9 @@ header nav ul li {
 
 /* Hover no nome "Gabe" */
 .logo a span:hover {
-    color: #F0F0F0; /* A cor que você desejar para o hover */
+    color: #F0F0F0; 
     transition: color 0.5s ease-in-out; /* Transição mais suave */
-    text-decoration: none; /* Retirado o sublinhado */
+    text-decoration: none; 
 }
 
 .btn-cv button:hover{
