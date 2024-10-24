@@ -122,6 +122,10 @@ section.topo-do-site .flex{
     margin-right: 15px;
 }
 
+.social-links a:last-child {
+    margin-right: 0; /* Remover margem direita do último ícone */
+}
+
 .social-links a:hover {
     color: #539DFF;
 }
