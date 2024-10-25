@@ -107,6 +107,7 @@ section.topo-do-site .flex{
     color: #ffffff;
     text-align: justify;
     margin: 15px 0;
+    line-height: 25px;
 }
 
 .img-topo-site img {
@@ -120,6 +121,7 @@ section.topo-do-site .flex{
     color: #F0F0F0;
     transition: color 0.3s ease;
     margin-right: 15px;
+    line-height: 45px;
 }
 
 .social-links a:last-child {
@@ -128,6 +130,91 @@ section.topo-do-site .flex{
 
 .social-links a:hover {
     color: #539DFF;
+}
+
+/* Estilo para a seção de contato */
+.contato {
+    padding: 40px 4%;
+    color: #F0F0F0;
+    text-align: center;
+}
+
+.contato h2 {
+    color: #539DFF;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    color: #F0F0F0;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    position: relative;
+}
+
+.campo label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 1rem;
+    color: #cccccc;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 20px 12px 8px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #2C2C54;
+    color: #F0F0F0;
+    font-size: 1rem;
+    resize: none; 
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid #539DFF;
+}
+
+.campo input:focus + label,
+.campo input:not(:placeholder-shown) + label,
+.campo textarea:focus + label,
+.campo textarea:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 8px;
+    font-size: 0.85rem;
+    color: #539DFF;
+    background-color: #1A1A40;
+    padding: 0 5px;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1A1A40;
+    background-color: #539DFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #417BCC;
 }
 
 .rodape p{

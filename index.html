@@ -25,10 +25,10 @@
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
                     <li><a href="#">Habilidades</a></li>
                     <li><a href="#">Projetos</a></li>
                     <li><a href="#">Certificações</a></li>
+                    <li><a href="#">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
@@ -44,7 +44,9 @@
                     </div><!--Fim img topo site-->
                     <div class="txt-topo-site">
                         <h1>Olá, você! Sou o Gabe.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut auctor libero, vitae venenatis ligula. Vivamus viverra sapien nec lacus lacinia, at ultrices orci efficitur. Etiam pellentesque egestas dui, eget elementum nibh laoreet vel. Ut et vehicula lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi scelerisque, arcu vel ultrices sollicitudin, ipsum nulla commodo nibh, et faucibus ex sem finibus leo. Donec mattis augue at lorem volutpat rhoncus. Nam in tortor non nibh rutrum congue eu non ligula. Nunc venenatis est felis, a consectetur libero porta sed. Curabitur iaculis, mi nec tristique tristique, lorem dolor tincidunt magna, posuere dignissim est odio sed ante.</p>
+                        <p>Olá, visitante curioso! Eu sou o Gabe, alguém que vive navegando entre mundos. Neste espaço, compartilho um pouco dessa jornada, onde cada aprendizado é um ponto luminoso no universo que sigo descobrindo.
+                            Aqui, o foco não é em uma galáxia muito distante, mas sim no presente, em tudo que posso aprender e construir no vasto universo da tecnologia. Sinta-se à vontade para explorar, e que a força do conhecimento esteja com você!
+                            </p>
 
                         <div class="social-links">
                             <a href="https://github.com/gabefaustino/"><i class="fa-brands fa-github"></i></a>
@@ -52,7 +54,7 @@
                         </div><!--fim social-links-->
 
                         <div class="btn-cv">
-                            <a href="#">
+                            <a href="/documents/GabrielFaustino_Currículo.pdf">
                                 <button>Download CV</button>
                             </a>
                         </div>
@@ -63,15 +65,44 @@
                 </div> <!--Fim flex-->
             </div> <!--Fim interface-->
         </section> <!--Fim topo do site-->
-        <div class="rodape"><p>Site em desenvolvimento</p></div>
     </main>
     
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
         <script>
             AOS.init();
         </script>
+    <section class="contato" id="contato">
+        <div class="interface">
+
+            <section class="contato" id="contato">
+                <div class="interface">
+                    <h2>Entre em Contato</h2>
+                    <p>Fique à vontade para mandar uma mensagem!</p>
+                    
+                    <form action="enviar_email.php" method="POST">
+                        <div class="campo">
+                            <input type="text" id="nome" name="nome" required>
+                            <label for="nome">Nome</label>
+                        </div>
+                        <div class="campo">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="campo">
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                            <label for="mensagem">Mensagem</label>
+                        </div>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </section>
+            
+
+        </div>
+    </section>
     
     
     
+    <div class="rodape"><p>Site em desenvolvimento</p></div>
 </body>
 </html>
