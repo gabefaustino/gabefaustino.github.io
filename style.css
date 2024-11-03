@@ -147,6 +147,37 @@ section.topo-do-site .flex {
     color: #539DFF;
 }
 
+/* Estilo da seção de certificações */
+.certificacoes {
+    padding: 40px 4%;
+    background-color: #1A1A40; /* Cor de fundo */
+    color: #F0F0F0; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+.certificacoes h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #539DFF; /* Cor do título */
+}
+
+.certificacoes ul {
+    list-style-type: none; /* Remove os marcadores */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.certificacoes ul li {
+    margin: 10px 0; /* Espaçamento entre as certificações */
+    font-size: 20px; /* Tamanho da fonte das certificações */
+    transition: color 0.3s; /* Transição suave na mudança de cor */
+}
+
+.certificacoes ul li:hover {
+    color: #539DFF; /* Muda a cor ao passar o mouse */
+}
+
+
+
 /* Estilo do rodapé */
 .rodape {
     text-align: center;
