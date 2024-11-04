@@ -150,30 +150,45 @@ section.topo-do-site .flex {
 /* Estilo da seção de certificações */
 .certificacoes {
     padding: 40px 4%;
-    background-color: #1A1A40; /* Cor de fundo */
-    color: #F0F0F0; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
+    background-color: #1A1A40;
+    color: #F0F0F0;
+    text-align: center;
 }
 
 .certificacoes h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #539DFF; /* Cor do título */
+    color: #539DFF;
 }
 
-.certificacoes ul {
-    list-style-type: none; /* Remove os marcadores */
-    padding: 0; /* Remove o padding padrão */
+.certificacao-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
 }
 
-.certificacoes ul li {
-    margin: 10px 0; /* Espaçamento entre as certificações */
-    font-size: 20px; /* Tamanho da fonte das certificações */
-    transition: color 0.3s; /* Transição suave na mudança de cor */
+.certificacao-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
 }
 
-.certificacoes ul li:hover {
-    color: #539DFF; /* Muda a cor ao passar o mouse */
+.certificacao-lista li {
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.certificacao-lista li:hover {
+    color: #539DFF;
+}
+
+.imagem-certificacao img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
 }
 
 
@@ -183,10 +198,11 @@ section.topo-do-site .flex {
     text-align: center;
     padding: 20px 0;
     background-color: #1A1A40;
-    color: #F0F0F0;
+    color: #ffffff;
     position: relative;
     bottom: 0;
     width: 100%;
+
 }
 
 /* Responsividade */
@@ -195,7 +211,7 @@ section.topo-do-site .flex {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .topo-do-site h1 {
         font-size: 28px;
     }
@@ -213,5 +229,17 @@ section.topo-do-site .flex {
 
     header nav ul li {
         padding: 5px 0;
+    }
+}
+
+/* Responsividade Imagem Certificação */
+@media (max-width: 768px) {
+    .certificacao-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-certificacao img {
+        width: 100%;
     }
 }
