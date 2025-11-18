@@ -5,27 +5,37 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    scrollbar-width: thin; /* Para navegadores Firefox */
-    scrollbar-color: #539DFF #1A1A40; /* Para navegadores Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #539DFF #1A1A40;
 }
 
 *::-webkit-scrollbar {
-    width: 8px; /* Largura da barra de rolagem */
+    width: 8px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #1A1A40; /* Cor do fundo da barra de rolagem */
+    background: #1A1A40;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #539DFF; /* Cor da barra de rolagem */
-    border-radius: 10px; /* Bordas arredondadas na barra de rolagem */
+    background-color: #539DFF;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #1A1A40;
 }
 
 .flex {
     display: flex;
 }
 
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* BOTÃO DO CURRÍCULO */
 .btn-cv button {
     padding: 10px 40px;
     font-size: 18px;
@@ -38,16 +48,12 @@
     transition: .2s;
 }
 
-body {
-    background-color: #1A1A40;
+.btn-cv button:hover {
+    box-shadow: 0px 0px 8px #539DFF;
+    transform: scale(1.05);
 }
 
-.interface {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-/* ESTILO DO CABEÇALHO */
+/* CABEÇALHO */
 header {
     padding: 40px 4%;
 }
@@ -60,6 +66,11 @@ header > .interface {
 
 header nav ul {
     list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
 }
 
 header nav ul li a {
@@ -75,12 +86,7 @@ header nav ul li a:hover {
 }
 
 header nav ul li a:focus {
-    outline: 2px solid #539DFF; 
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 0 10px;
+    outline: 2px solid #539DFF;
 }
 
 .logo a {
@@ -90,19 +96,12 @@ header nav ul li {
     color: #539DFF;
 }
 
-/* Hover no nome "Gabe" */
 .logo a span:hover {
-    color: #F0F0F0; 
-    transition: color 0.5s ease-in-out; /* Transição mais suave */
-    text-decoration: none; 
+    color: #F0F0F0;
+    transition: color 0.5s ease-in-out;
 }
 
-.btn-cv button:hover {
-    box-shadow: 0px 0px 8px #539DFF;
-    transform: scale(1.05);
-}
-
-/* Estilo topo do site */
+/* TOPO DO SITE */
 section.topo-do-site {
     padding: 40px 4%;
 }
@@ -126,13 +125,13 @@ section.topo-do-site .flex {
 }
 
 .img-topo-site img {
-    width: 400px; /* Tamanho ajustado da imagem */
+    width: 400px;
     height: auto;
 }
 
-/* Estilo dos ícones de redes sociais */
+/* ÍCONES SOCIAIS */
 .social-links a {
-    font-size: 32px; /* Aumentando o tamanho dos ícones */
+    font-size: 32px;
     color: #F0F0F0;
     transition: color 0.3s ease;
     margin-right: 15px;
@@ -140,14 +139,14 @@ section.topo-do-site .flex {
 }
 
 .social-links a:last-child {
-    margin-right: 0; /* Remover margem direita do último ícone */
+    margin-right: 0;
 }
 
 .social-links a:hover {
     color: #539DFF;
 }
 
-/* Estilo da seção de certificações */
+/* SEÇÃO CERTIFICAÇÕES */
 .certificacoes {
     padding: 40px 4%;
     background-color: #1A1A40;
@@ -191,49 +190,74 @@ section.topo-do-site .flex {
     border-radius: 10px;
 }
 
+/* SEÇÃO HABILIDADES */
+.habilidades {
+    padding: 40px 4%;
+    background-color: #1A1A40;
+    color: #F0F0F0;
+    text-align: center;
+}
 
+.habilidades h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #539DFF;
+}
 
-/* Estilo do rodapé */
+.habilidade-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.habilidade-container p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+/* RODAPÉ */
 .rodape {
     text-align: center;
     padding: 20px 0;
     background-color: #1A1A40;
     color: #ffffff;
-    position: relative;
-    bottom: 0;
     width: 100%;
-
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE GERAL */
 @media (max-width: 768px) {
+
     .flex {
         flex-direction: column;
         align-items: center;
     }
-    
+
+    /* Topo */
     .topo-do-site h1 {
         font-size: 28px;
     }
 
     .img-topo-site img {
-        width: 100%; /* Imagem ocupa 100% da largura em dispositivos menores */
+        width: 100%;
         height: auto;
     }
 
+    /* Menu */
     header nav ul {
         flex-direction: column;
         padding: 10px;
-        margin: 0;
     }
 
     header nav ul li {
         padding: 5px 0;
     }
-}
 
-/* Responsividade Imagem Certificação */
-@media (max-width: 768px) {
+    /* Certificações */
     .certificacao-container {
         flex-direction: column;
         align-items: center;
@@ -241,5 +265,15 @@ section.topo-do-site .flex {
 
     .imagem-certificacao img {
         width: 100%;
+    }
+
+    /* Habilidades */
+    .habilidade-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .habilidade-container p {
+        text-align: justify;
     }
 }
