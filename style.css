@@ -74,14 +74,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #539DFF;
+    color: #F0F0F0;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 header nav ul li a:hover {
-    color: #ffffff;
+    color: ##539DFF;
     transform: scale(1.1);
 }
 
