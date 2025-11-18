@@ -81,7 +81,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: ##539DFF;
+    color: #539DFF;
     transform: scale(1.1);
 }
 
