@@ -218,12 +218,12 @@ section.topo-do-site .flex {
 }
 
 .profissional-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    text-align: left;
+    display: block;        /* antes era flex */
+    max-width: 800px;      /* mesma largura aproximada da área das certificações */
+    margin: 0 auto;        /* centraliza o bloco inteiro na página */
+    text-align: left;      /* alinha o texto ao lado esquerdo */
 }
+
 
 .profissional-lista {
     list-style-type: none;
