@@ -24,6 +24,7 @@
 
 body {
     background-color: #1A1A40;
+        padding-top: 120px; /* ajuste conforme o tamanho do header */
 }
 
 .flex {
@@ -53,9 +54,16 @@ body {
     transform: scale(1.05);
 }
 
-/* CABEÇALHO */
+/* CABEÇALHO FIXO */
 header {
-    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 4%; /* um pouco menor para ficar mais leve */
+    background-color: #0A1A2F; /* coloquei o mesmo azul do seu layout */
+    z-index: 1000; /* garante que fique por cima de tudo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4); /* opcional */
 }
 
 header > .interface {
@@ -101,33 +109,6 @@ header nav ul li a:focus {
     transition: color 0.5s ease-in-out;
 }
 
-/* TOPO DO SITE */
-section.topo-do-site {
-    padding: 40px 4%;
-}
-
-section.topo-do-site .flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.topo-do-site h1 {
-    color: #539DFF;
-    font-size: 42px;
-}
-
-.topo-do-site .txt-topo-site p {
-    color: #ffffff;
-    text-align: justify;
-    margin: 15px 0;
-    line-height: 25px;
-}
-
-.img-topo-site img {
-    width: 400px;
-    height: auto;
-}
 
 /* ÍCONES SOCIAIS */
 .social-links a {
