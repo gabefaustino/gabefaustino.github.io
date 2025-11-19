@@ -146,6 +146,50 @@ section.topo-do-site .flex {
     color: #539DFF;
 }
 
+/* SEÇÃO FORMAÇÃO */
+.formacao {
+    padding: 40px 4%;
+    background-color: #1A1A40;
+    color: #F0F0F0;
+    text-align: center;
+}
+
+.formacao h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #539DFF;
+}
+
+.formacao-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.formacao-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.formacao-lista li {
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.formacao-lista li:hover {
+    color: #539DFF;
+}
+
+.formacao .imagem-certificacao img {
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* SEÇÃO CERTIFICAÇÕES */
 .certificacoes {
     padding: 40px 4%;
@@ -190,57 +234,7 @@ section.topo-do-site .flex {
     border-radius: 10px;
 }
 
-/* SEÇÃO FORMAÇÃO – mesmo estilo de CERTIFICAÇÕES */
-.formacao {
-    padding: 40px 4%;
-    background-color: #1A1A40;
-    color: #F0F0F0;
-    text-align: center;
-}
 
-.formacao h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #539DFF;
-}
-
-.formacao-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    text-align: left;
-}
-
-.formacao-lista {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-}
-
-.formacao-lista li {
-    margin: 10px 0;
-    transition: color 0.3s;
-}
-
-.formacao-lista li:hover {
-    color: #539DFF;
-}
-
-/* Imagem da formação com card de fundo */
-.formacao .imagem-certificacao {
-    background-color: #5071E6;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 0 8px rgba(83,157,255,0.25);
-}
-
-.formacao .imagem-certificacao img {
-    width: 160px;
-    height: auto;
-    border-radius: 10px;
-}
 
 
 /* SEÇÃO HABILIDADES */
