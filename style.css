@@ -228,11 +228,20 @@ section.topo-do-site .flex {
     color: #539DFF;
 }
 
+/* Imagem da formação com card de fundo */
+.formacao .imagem-certificacao {
+    background-color: #0F1536;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(83,157,255,0.4);
+}
+
 .formacao .imagem-certificacao img {
-    width: 250px;
+    width: 160px;
     height: auto;
     border-radius: 10px;
 }
+
 
 /* SEÇÃO HABILIDADES */
 .habilidades {
