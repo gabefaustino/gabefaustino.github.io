@@ -173,12 +173,14 @@ section.topo-do-site .flex {
     color: #539DFF;
 }
 
+/* --- UNIFORMIZAÇÃO DAS MARGENS --- */
 .formacao-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
     text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .formacao-lista {
@@ -217,13 +219,13 @@ section.topo-do-site .flex {
     color: #539DFF;
 }
 
+/* --- UNIFORMIZAÇÃO DAS MARGENS --- */
 .profissional-container {
-    display: block;        /* antes era flex */
-    max-width: 800px;      /* mesma largura aproximada da área das certificações */
-    margin: 0 auto;        /* centraliza o bloco inteiro na página */
-    text-align: left;      /* alinha o texto ao lado esquerdo */
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
 }
-
 
 .profissional-lista {
     list-style-type: none;
@@ -255,12 +257,14 @@ section.topo-do-site .flex {
     color: #539DFF;
 }
 
+/* --- UNIFORMIZAÇÃO DAS MARGENS --- */
 .certificacao-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
     text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .certificacao-lista {
@@ -285,7 +289,6 @@ section.topo-do-site .flex {
     border-radius: 10px;
 }
 
-
 /* SEÇÃO HABILIDADES */
 .habilidades {
     padding: 40px 4%;
@@ -300,6 +303,7 @@ section.topo-do-site .flex {
     color: #539DFF;
 }
 
+/* já estava uniforme — mantido */
 .habilidade-container {
     display: flex;
     align-items: center;
