@@ -230,10 +230,10 @@ section.topo-do-site .flex {
 
 /* Imagem da formação com card de fundo */
 .formacao .imagem-certificacao {
-    background-color: #0F1536;
+    background-color: #5071E6;
     padding: 15px;
     border-radius: 12px;
-    box-shadow: 0 0 8px rgba(83,157,255,0.4);
+    box-shadow: 0 0 8px rgba(83,157,255,0.25);
 }
 
 .formacao .imagem-certificacao img {
