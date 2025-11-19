@@ -24,7 +24,12 @@
 
 body {
     background-color: #1A1A40;
-        padding-top: 90px; /* ajuste conforme o tamanho do header */
+    padding-top: 90px; /* compensação da altura do header fixo */
+}
+
+/* EVITA QUE OS TÍTULOS FIQUEM ESCONDIDOS AO CLICAR NO MENU */
+section {
+    scroll-margin-top: 110px; /* ajuste ideal para seu header */
 }
 
 .flex {
@@ -42,10 +47,10 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 4%; /* um pouco menor para ficar mais leve */
-    background-color: #0A1A2F; /* coloquei o mesmo azul do seu layout */
-    z-index: 1000; /* garante que fique por cima de tudo */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4); /* opcional */
+    padding: 20px 4%;
+    background-color: #0A1A2F;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 header > .interface {
@@ -90,7 +95,6 @@ header nav ul li a:focus {
     color: #F0F0F0;
     transition: color 0.5s ease-in-out;
 }
-
 
 /* TOPO DO SITE */
 section.topo-do-site {
@@ -137,7 +141,6 @@ section.topo-do-site .flex {
     box-shadow: 0px 0px 8px #539DFF;
     transform: scale(1.05);
 }
-
 
 /* ÍCONES REDES SOCIAIS */
 .social-links a {
@@ -244,9 +247,6 @@ section.topo-do-site .flex {
     border-radius: 10px;
 }
 
-
-
-
 /* SEÇÃO HABILIDADES */
 .habilidades {
     padding: 40px 4%;
@@ -286,7 +286,7 @@ section.topo-do-site .flex {
     width: 100%;
 }
 
-/* RESPONSIVIDADE GERAL */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
 
     .flex {
