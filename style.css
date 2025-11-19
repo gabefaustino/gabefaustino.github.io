@@ -223,8 +223,6 @@ section.topo-do-site .flex {
     justify-content: center;
     gap: 30px;
     text-align: left;
-    max-width: 900px;   /* Mantém alinhamento e evita deformações */
-    margin: 0 auto;     /* Centraliza o bloco */
 }
 
 .profissional-lista {
@@ -263,8 +261,6 @@ section.topo-do-site .flex {
     justify-content: center;
     gap: 30px;
     text-align: left;
-    max-width: 900px;   /* Para ficar igual ao histórico profissional */
-    margin: 0 auto;     /* Centraliza */
 }
 
 .certificacao-lista {
@@ -284,13 +280,9 @@ section.topo-do-site .flex {
 }
 
 .imagem-certificacao img {
-    width: 200px;        /* Reduzi para não ficar grande demais */
+    width: 250px;
     height: auto;
     border-radius: 10px;
-    background: #0F0F2A; /* Opcional — cria contraste com fundo azul */
-    padding: 10px;       /* Dá espaçamento interno */
-    border: 1px solid #539DFF30; /* Um leve contorno */
-    border-radius: 12px;
 }
 
 
